@@ -1,0 +1,46 @@
+.details {
+  span {
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+  }
+  p {
+    text-align: justify;
+    font-weight: 500;
+  }
+}
+
+.addoptions {
+  display: flex;
+  margin-top: 20px;
+  .quantity {
+    // width: 300px;
+    height: 50px;
+    button {
+      width: 40px;
+      height: 40px;
+      border: 0;
+      outline: 0;
+      border: 1px solid #ccc;
+    }
+    input {
+      width: 50px;
+      height: 40px;
+      border: 0;
+      outline: 0;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+  }
+  .addto {
+    width: 120px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: #cb0215;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,252 @@
+@import "../../mixins.scss";
+.headerWrapper {
+  width: 100%;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  z-index: 100;
+  .navbar {
+    display: none;
+    @include md {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+    }
+    .middle {
+      cursor: pointer;
+    }
+
+    .leftside {
+      .s1 {
+        padding-bottom: 5px;
+      }
+      span {
+        color: var(--blue);
+        font-weight: bold;
+        display: inline-block;
+      }
+    }
+    .rightside {
+      .account {
+        position: relative;
+
+        .maindiv {
+          position: absolute;
+          width: 100%;
+          display: none;
+          &.mydivclass {
+            display: block;
+          }
+
+          .accountdashbord {
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            span {
+              padding: 10px 0;
+              cursor: pointer;
+              color: var(--blue);
+            }
+          }
+        }
+        .myaccount {
+          display: flex;
+          justify-content: space-evenly;
+
+          font-size: 14px;
+
+          .bar {
+            width: 2px;
+            height: 15px;
+
+            background: var(--blue);
+          }
+          .dashbord {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+
+            span {
+              svg {
+                margin-left: 10px;
+              }
+            }
+          }
+          div {
+            color: var(--blue);
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          .cart {
+            margin-left: 10px;
+            span {
+              margin-right: 8px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        .box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          background-color: #f8f8f8;
+          padding: 10px;
+          &:hover {
+            background-color: #ebebeb;
+          }
+
+          input {
+            width: 220px;
+            padding: 5px 5px;
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+          }
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            svg {
+              font-size: 20px;
+              font-weight: bold;
+              color: var(--blue);
+            }
+          }
+        }
+      }
+    }
+  }
+  .catagorywrapper {
+    display: none;
+    @include md {
+      width: 100%;
+      background-color: #215968;
+      padding: 20px 0;
+    }
+
+    .collections {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .collection {
+        width: 100px;
+        display: inline-block;
+        margin-right: 20px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// #div {
+//   display: block;
+// }
+.mobilenavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  @include md {
+    display: none;
+  }
+  span {
+    font-size: 25px;
+  }
+  .mmiddle {
+    img {
+      width: 200px;
+    }
+  }
+}
+.togglenavwrapper {
+  @include md {
+    display: none;
+  }
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 1000px;
+  display: none;
+  height: 0vh;
+  transition: all 300ms ease-in;
+  &.showtogglenav {
+    display: block;
+    top: 100%;
+    height: 100vh;
+    @include md {
+      display: none;
+    }
+  }
+  .togglenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: #f8f8f8;
+      padding: 10px;
+      &:hover {
+        background-color: #ebebeb;
+      }
+
+      input {
+        width: 220px;
+        padding: 5px 5px;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          font-size: 20px;
+          font-weight: bold;
+          color: var(--blue);
+        }
+      }
+    }
+    .collections {
+      div {
+        margin-top: 10px;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+    .account-link {
+      div {
+        margin-top: 10px;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}

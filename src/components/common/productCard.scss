@@ -1,0 +1,69 @@
+@import "../../mixins.scss";
+.card {
+  @include md {
+    width: 23%;
+    height: 370px;
+  }
+  width: 100%;
+
+  margin: 30px 20px;
+  cursor: pointer;
+
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   transition: all 300ms ease-in-out;
+  //   &:hover {
+  //     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  //   }
+  .cardImg {
+    width: 100%;
+    overflow: hidden;
+    // height: 200px;
+    .image {
+      width: 100%;
+      // height: 185px;
+      object-fit: cover;
+      transition: all 300ms ease-in;
+    }
+  }
+  .carddetails {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding: 5px 10px;
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .price {
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: red;
+    }
+  }
+  .addtocart {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    background: var(--blue);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    display: none;
+    transition: all 300ms ease-in;
+    &:hover {
+      background: #215968;
+      cursor: pointer;
+    }
+  }
+  &:hover .addtocart {
+    display: block;
+  }
+  &:hover .cardImg .image {
+    scale: 0.9;
+  }
+}

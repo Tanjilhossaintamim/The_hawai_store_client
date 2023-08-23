@@ -1,0 +1,33 @@
+@import "../../mixins.scss";
+.footerWrapper {
+  background-color: #eaefef;
+  padding: 3% 0;
+  .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div {
+      width: 48%;
+      @include md {
+        width: 24%;
+      }
+      h6 {
+        font-size: 20px;
+        color: #636363;
+        font-weight: 500;
+        padding-bottom: 10px;
+      }
+      p {
+        padding: 7px 0;
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+        color: #636363;
+        cursor: pointer;
+        &:hover {
+          color: #373b3b;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../../../mixins.scss";
+.cartWrapper {
+  padding: 2% 0;
+  display: flex;
+  min-height: 600px;
+  overflow: scroll;
+  .table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .orderbtn {
+      padding: 10px 15px;
+      margin-top: 10px;
+      border: 0;
+      outline: 0;
+      background: var(--blue);
+      color: #fff;
+      cursor: pointer;
+    }
+    table {
+      border-collapse: collapse;
+
+      thead {
+        th {
+          padding: 15px;
+          @include md {
+            padding: 30px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            @include md {
+              padding: 30px;
+            }
+            text-align: center;
+            padding: 15px;
+            button {
+              @include md {
+                height: 40px;
+                width: 40px;
+              }
+              height: 25px;
+              width: 20px;
+              border: 0;
+              outline: 0;
+              border: 1px solid #ccc;
+            }
+            input {
+              @include md {
+                width: 50px;
+                height: 40px;
+              }
+              width: 20px;
+              height: 25px;
+              border: 0;
+              outline: 0;
+              border: 1px solid #ccc;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

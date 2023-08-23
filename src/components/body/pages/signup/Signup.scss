@@ -1,0 +1,81 @@
+.loginwrapper {
+  background-color: #7f7f7f;
+  // height: 61.6vh;
+  height: 100vh;
+  .signupform {
+    width: 400px;
+    height: 750px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    text-align: center;
+
+    form {
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        color: #636363;
+        padding-bottom: 30px;
+      }
+      .email,
+      .password,
+      .firstname,
+      .lastname {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        height: 40px;
+        padding: 10px;
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid #999999;
+        input {
+          width: 100%;
+          font-size: 18px;
+          height: 40px;
+          border: 0;
+          outline: 0;
+          padding-left: 15px;
+        }
+        svg {
+          font-size: 20px;
+          color: #999999;
+        }
+      }
+      .inputbtn {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 18px;
+        border: 0;
+        outline: 0;
+        background-color: #19aa8d;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      p {
+        margin-top: 20px;
+        color: #19aa8d;
+      }
+    }
+    hr {
+      border: 1px solid #636363;
+      border-bottom: 0;
+    }
+    .signup {
+      padding-top: 20px;
+      color: #7f7f7f;
+      span {
+        color: #19aa8d;
+        cursor: pointer;
+      }
+    }
+  }
+}

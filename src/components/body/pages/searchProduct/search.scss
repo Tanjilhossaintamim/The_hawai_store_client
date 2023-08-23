@@ -1,0 +1,16 @@
+.catagoryWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .rightside {
+    width: 100%;
+    min-height: 700px;
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
