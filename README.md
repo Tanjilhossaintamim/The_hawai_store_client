@@ -3,7 +3,7 @@
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 # Overview
- 1. this is a ecommerce project this project has user login register add to cart options this project responsive all device
+  this is a ecommerce project this project has user login register add to cart options. this project has search and filtering option this project responsive all device
 
 # Installation Process
 1. npm i
